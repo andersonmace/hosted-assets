@@ -7,7 +7,7 @@ form.addEventListener('submit', function(event) {
   const novoValor = parseInt(contadorInput.value);
 
   if (novoValor >= 0 && novoValor <= 999) {
-    fetch('../json/counter.json', {
+    fetch('./counter-edit/json/counter.json', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
