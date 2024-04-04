@@ -7,7 +7,7 @@ form.addEventListener('submit', function(event) {
   const novoValor = parseInt(contadorInput.value);
 
   if (novoValor >= 0 && novoValor <= 999) {
-    fetch('./counter-edit/json/counter.json', {
+    fetch('https://andersonmace.github.io/hosted-assets/counter-edit/json/counter.json', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
